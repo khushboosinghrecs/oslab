@@ -18,3 +18,21 @@ cout <<"child process" << getpid();
 }
 return 0;
 }
+//new pgm 
+#include<stdio.h>
+#include<stdlib.h>
+#include<sys/types.h>
+#include<sys/wait.h>
+#include<unistd.h>
+int main()
+{
+int x=1;
+if(fork()==0)
+{
+printf("child has x=%d\n", ++x);
+}
+else{
+printf("poarent has x= %d\n", --x);
+}
+return 0;
+}
