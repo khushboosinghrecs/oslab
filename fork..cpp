@@ -36,3 +36,17 @@ printf("poarent has x= %d\n", --x);
 }
 return 0;
 }
+// multiple fork
+#include<stdio.h>
+#include<sys/types.h>
+#include<unistd.h>
+#include<stdlib.h>
+
+int main()
+{
+fork();
+fork();
+fork();
+printf("hello khushi in hello2\n");
+return 0;
+}
